@@ -69,18 +69,6 @@ in {return token(yytext(), "IN", yyline, yycolumn);}
 is {return token(yytext(), "IS", yyline, yycolumn);}
 import {return token(yytext(), "IMPORT", yyline, yycolumn);}
 
-/* PALABRAS RESERVADAS EXCLUSIVAS DE S-FARM */
-sensor {return token(yytext(), "SENSOR", yyline, yycolumn);}
-temperatura {return token(yytext(), "TEMPERATURA", yyline, yycolumn);}
-infrarrojo{return token(yytext(), "INFRARROJO", yyline, yycolumn);}
-hora{return token(yytext(), "HORA", yyline, yycolumn);}
-beber{return token(yytext(), "BEBER", yyline, yycolumn);}
-alimentar{return token(yytext(), "ALIMENTAR", yyline, yycolumn);}
-encender{return token(yytext(), "ENCENDER", yyline, yycolumn);}
-apagar{return token(yytext(), "APAGAR", yyline, yycolumn);}
-
-
-
 /* CADENA DE TEXTO*/
 {cadenaTxt} {return token(yytext(), "CADENA_TXT", yyline, yycolumn);}
 
